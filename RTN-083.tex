@@ -1,4 +1,4 @@
-\documentclass[OPS,authoryear,toc]{lsstdoc}
+\documentclass[OPS,lsstdraft,authoryear,toc]{lsstdoc}
 \input{meta}
 
 % Package imports go here.
@@ -15,7 +15,7 @@
 % Update keywords and author information as necessary.
 \hypersetup{
     pdftitle={Strategic Media Plan for Rubin Observatory First Light Release},
-    pdfauthor={William O'Mullane},
+    pdfauthor={Ranpal Gill},
     pdfkeywords={}
 }
 
@@ -23,7 +23,8 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-William O'Mullane
+Ranpal Gill and
+\v{Z}eljko Ivezi\'{c}
 }
 
 \setDocRef{RTN-083}
@@ -43,7 +44,7 @@ This plan is focused solely on the activities and products needed to produce sig
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{William O'Mullane}
+  \addtohist{0.1}{2024-07-24}{Set up from google docc}{William O'Mullane}
 }
 
 
@@ -54,12 +55,11 @@ This plan is focused solely on the activities and products needed to produce sig
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
 % use \mkshorttitle to remove the extra pages
 
-% ADD CONTENT HERE
-% You can also use the \input command to include several content files.
-
+\input{body}
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+
 \section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
