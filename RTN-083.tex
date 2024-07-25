@@ -1,4 +1,5 @@
 \documentclass[LPM,lsstdraft,authoryear,toc]{lsstdoc}
+%\documentclass[OPS,authoryear,toc]{lsstdoc}
 \input{meta}
 
 % Package imports go here.
@@ -9,13 +10,13 @@
 %\input{aglossary.tex}
 %\makeglossaries
 
-\title{Strategic Media Plan for Rubin Observatory First Light Release}
+\title{Rubin First Look Public Announcement Strategy}
 
 % This can write metadata into the PDF.
 % Update keywords and author information as necessary.
 \hypersetup{
-    pdftitle={Strategic Media Plan for Rubin Observatory First Light Release},
-    pdfauthor={Ranpal Gill},
+    pdftitle={Rubin First Look Public Announcement Strategy},
+    pdfauthor={William O'Mullane},
     pdfkeywords={}
 }
 
@@ -23,8 +24,9 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Ranpal Gill and
-\v{Z}eljko Ivezi\'{c}
+Luz Mar\'{i}a Aguirre, Keith Bechtol, Bob Blum, Lars Lindberg Christensen, Ranpal Gill, Heidi Hammel,
+\v{Z}eljko Ivezi\'{c}, Victor Krabbendam, Shari Lifson, Kristen Metzger, William O'Mullane, Steve Ritz,
+Aaron Roodman, Sandrine Thomas, Alan Strauss, Alejandra Voigt, Beth Willman (incomplete?)
 }
 
 \setDocRef{RTN-083}
@@ -36,7 +38,17 @@ Ranpal Gill and
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-This plan is focused solely on the activities and products needed to produce significant media impact for the first image release from the newly completed Vera C. Rubin Observatory (Rubin). Compared with all the excellent preparatory work done earlier, this is a very narrow focus. The aim is to produce a succinct strategic plan which is no more than 30 pages long.
+This strategic plan is focused solely on the activities and products
+needed to produce significant media impact for the first image release
+(Rubin First Look) from the newly completed Vera C. Rubin Observatory.
+Later media engagements, and naming and dedication ceremonies in
+Chile, are planned separately. This document summarizes strategic
+concepts and guidance while implementation details are described in supporting documents.
+Rubin First Look public announcement is
+anticipated for the first half of 2025. \\
+
+{\bf Note: while this document is written in future tense, most
+  of described deliverables are in progress or have been already completed.}
 }
 
 % Change history defined here.
@@ -44,7 +56,7 @@ This plan is focused solely on the activities and products needed to produce sig
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{0.1}{2024-07-24}{Set up from google docc}{William O'Mullane}
+  \addtohist{1}{2024-07-24}{Unreleased, first port from google doc draft.}{\v{Z}eljko Ivezi\'{c}}
 }
 
 
@@ -55,11 +67,26 @@ This plan is focused solely on the activities and products needed to produce sig
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
 % use \mkshorttitle to remove the extra pages
 
-\input{body}
+% ADD CONTENT HERE
+% You can also use the \input command to include several content files.
+
+\input{goals}
+\input{products}
+\input{media}
+\input{team}
+%\input{links}
+
+
+
+
+\end{document}
+
+
+
+
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-
 \section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
@@ -71,7 +98,3 @@ This plan is focused solely on the activities and products needed to produce sig
 %\printglossaries
 
 
-
-
-
-\end{document}
